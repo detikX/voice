@@ -11,7 +11,7 @@
 // }) 
 
 $("#play").click(function () {
-    responsiveVoice.speak($(".wrap-detikx p").text(), "Indonesian Male");
+    responsiveVoice.speak($(".wrap-detikx p").text(), "Indonesian Female");
 
 })
 $("#stop").click(function () {

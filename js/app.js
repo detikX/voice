@@ -1,11 +1,23 @@
-var playbutton = $("#playbutton")
+// var playbutton = $("#playbutton")
 
-playbutton.click(function () {
-    responsiveVoice.cancel();
-    responsiveVoice.speak($('.text').value, $("#voiceselection").val());
-});
+// playbutton.click(function () {
+//     responsiveVoice.cancel();
+//     responsiveVoice.speak($('.text').value, $("#voiceselection").val());
+// });
 
-var stopbutton = $("#stopbutton")
-stopbutton.click(function () {
+// var stopbutton = $("#stopbutton")
+// stopbutton.click(function () {
+//     responsiveVoice.cancel();
+// }) 
+
+$("#play").click(function () {
+    responsiveVoice.speak($("p").html(), "Indonesian Female");
+
+})
+$("#stop").click(function () {
     responsiveVoice.cancel();
-}) 
+
+})
+// document.querySelector("button").addEventListener("click", e => {
+
+// })
